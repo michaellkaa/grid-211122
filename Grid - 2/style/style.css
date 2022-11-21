@@ -9,7 +9,7 @@ body {
 
 .bd {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
     gap: 20px;
 }
@@ -21,6 +21,10 @@ body {
 }
 
 #janek {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
     padding: 5px;
     transition: 0.7s;
     color: teal;
@@ -34,13 +38,28 @@ body {
 }
 
 #jedna {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: left;
     background-color: teal;
 }
 
 #dva {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 2;
     background-color: tomato;
 }
 
 #pet {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    z-index: 5;
     background-color: wheat;
 }

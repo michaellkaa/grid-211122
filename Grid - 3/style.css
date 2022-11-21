@@ -1,0 +1,57 @@
+body {
+    background-color: bisque;
+}
+
+.bd {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.jedna, .dva, .tri, .ctyri, .pet {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(14, 14, 14);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.jedna {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgb(151, 101, 25);
+}
+
+.dva {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgb(226, 147, 43);
+}
+
+.tri {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    background-color: rgb(85, 53, 24);
+}
+
+.ctyri {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    background-color: rgb(218, 231, 31);
+}
+
+.pet {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    background-color: coral;
+}
